@@ -1,0 +1,100 @@
+/* Fv.css */
+.square-card {
+    width: calc(30% - 10px); /* Set a fixed width for each card with spacing in between */
+    border: 5px solid rgb(20, 20, 20);; /* Add a blue border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.582);
+    background-color:rgb(155,211,92);
+    color: #000000cc;
+    transition: transform 0.2s; /* Add transition for transform property */
+    position: relative; /* Add this to position the image container */
+}
+
+/* Increase the space between cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusted to space around each card */
+    gap: 30px; /* Adjust the gap between cards */
+}
+
+/* Card Image Styles */
+.square-card .card-image {
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio (4 / 3 * 100%) */
+    overflow: hidden;
+    position: relative; /* Add this for positioning */
+}
+
+.square-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Position the image within its container */
+    top: 0;
+    left: 0;
+}
+
+/* Card Content Styles */
+.square-card .card-body {
+    padding: 20px;
+    text-align: center; /* Center align content */
+}
+
+.square-card .card-title {
+    font-size: 24px; /* Increase title font size */
+    font-weight: bolder;
+    margin-bottom: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.square-card .card-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.square-card .card-text.price {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0b4e85;
+}
+
+/* Quantity Selector Styles */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Add spacing between quantity and buttons */
+}
+
+.quantity-selector button {
+    width: 30px; /* Adjust button width */
+    height: 30px; /* Increase button height */
+    font-size: 20px; /* Increase button font size */
+}
+
+.quantity {
+    margin: 0 10px; /* Add spacing between quantity and buttons */
+    font-size: 20px; /* Increase quantity font size */
+}
+
+/* "Add to Cart" Button Styles */
+.square-card .btn-primary {
+    background-color: #0267b9;
+    border: none;
+    width: 50%; /* Make the button full width */
+    height: 40px; /* Increase button height */
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Add hover effect for scaling */
+.square-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+
+.square-card .btn-primary:hover {
+    background-color: #1324c2;
+    color: #fff;
+}

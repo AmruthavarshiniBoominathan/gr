@@ -1,0 +1,111 @@
+.admin-home {
+    padding: 20px;
+    padding-left: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whole {
+    padding-left: 5%;
+}
+
+.card-container-admin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust the top margin as needed */
+  padding-left: 270px;
+    margin-right: 20px;
+    margin-bottom: 62px;
+}
+  
+  .card {
+    width: calc(30% - 20px); /* Set a fixed width for each card with spacing in between */
+    margin-bottom: 20px; /* Add spacing to the bottom of each row of cards */
+    border: 2px solid rgb(20, 20, 20); /* Add a blue border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.582);
+    background-color: rgb(255, 255, 255);
+    color: #000000cc;
+    transition: transform 0.2s; /* Add transition for transform property */
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: center; /* Center align the card header */
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the card title */
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: jusitfy;
+  }
+  
+  .card-description {
+    font-size: 14px;
+  }
+  
+  .card-text {
+    padding: 2%;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    position: fixed; /* Set position to fixed */
+    height: 200px; /* Use 100% height to cover the entire viewport */
+    z-index: 2;
+}
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  .sidebar-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .sidebar-item a:hover {
+    color: #5ed3ba; /* Change color on hover */
+  }
+  
+  /* Add a separator line between items */
+  .sidebar-item:not(:last-child) {
+    border-bottom: 1px solid #5ed3ba;
+  }
+  
+  /* Highlight the selected item */
+  .sidebar-item.active {
+    background-color: #5ed3ba;
+    border-radius: 5px;
+  }
+  
+  .sidebar-item.active a {
+    color: #333; /* Change text color for the selected item */
+  }
+  

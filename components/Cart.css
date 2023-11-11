@@ -1,0 +1,43 @@
+
+/* Style for product list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Style for selected products and cart */
+.selected-product {
+  margin-top: 20px;
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.clear-cart {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.clear-cart:hover {
+  background-color: #d32f2f;
+}

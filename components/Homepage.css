@@ -1,0 +1,353 @@
+/* Homepage Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(20, 20, 20, 0.938);;
+  color: #fff;
+  padding: 1px 0;
+  font-size: 1rem;
+  margin-left:-10%;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin-left:21%;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+/* Navbar Animation */
+.navbar-item {
+  margin-right: 8px;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.navbar-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  bottom: -2px;
+  left: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-item:hover::before {
+  background-color: #fff; /* Animation color on hover */
+}
+
+
+/* Update the CSS for the login button */
+.login-button,.logout-button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-size: 20px;
+  margin-top: -8%;
+  margin-left: 0%;
+}
+
+.login-button:hover,.logout-button:hover {
+  background-color: #555; /* Button background color on hover */
+  color: #fff; /* Button text color on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+ background-image: url('../img/Designer.png');
+ background-repeat: no-repeat;
+ background-size: 100%;
+  color: #000000;
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.hero-container {
+  max-width: 2500px;
+  align-content: center;
+  margin:auto;
+}
+
+.hero h1 {
+  font-size: 48px; /* Increase the font size for a more prominent title */
+  font-weight: bold;
+  margin-bottom: -30px;
+  text-shadow: 2px 2px 4px rgb(178, 201, 178); 
+  color: #0b4e85; /* Change the text color to white */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Categories Section Styles */
+.categories {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.categories h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: #f8f8f8;
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.category h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.category p {
+  font-size: 16px;
+}
+
+/* Offers Section Styles */
+.offers {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offers h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Customer Testimonials Section Styles */
+.testimonials {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonials h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Newsletter Section Styles */
+.newsletter {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Homepage.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  margin: 0 10px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer a:hover {
+  color: #7fd35e; /* Change color on hover */
+}
+
+.footer-container {
+  margin-top: 20px;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+/* Additional styling for social media icons */
+.footer a i {
+  margin-right: 100px; ;/* Adjust spacing between icons */
+}
+
+
+/* Add this to your stylesheet */
+
+.sidebar {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Add a border to separate sidebar from main content */
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #0b4e85; /* Change color on hover */
+}
+
+
+
+/* Homepage.css */
+.feedback-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  width: 300px;
+  margin: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card-body {
+  padding: 20px;
+}
+
+.feedback-card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007bff; /* Blue color */
+}
+
+.feedback-card-text {
+  font-size: 1em;
+  color: #555;
+}

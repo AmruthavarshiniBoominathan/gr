@@ -1,0 +1,34 @@
+/* Homepage.css */
+.draggable-image-carousel {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+/* Homepage.css */
+.arrow-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Adjust the margin to move the buttons below the image */
+}
+
+.arrow-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px; /* Adjust the margin between the buttons */
+  transition: background-color 0.3s ease;
+}
+
+
+.arrow-button:hover {
+  background-color: #2980b9;
+}
+
+.arrow-button:active {
+  background-color: #1f618d;
+}
